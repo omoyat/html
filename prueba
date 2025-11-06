@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Calificaciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .contenedor-botones {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contenedor-botones h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .boton {
+            padding: 12px 25px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .boton.confirmado {
+            background-color: #4CAF50; /* Color inicial verde */
+        }
+        .boton.confirmado:hover {
+            background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+        }
+        .boton.no-confirmado {
+            background-color: #f44336; /* Color inicial rojo */
+        }
+        .boton.no-confirmado:hover {
+            background-color: #d32f2f; /* Rojo más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
 
+    <div class="contenedor-botones">
+        <h2>¿Deseas confirmar la calificación?</h2>
+        <button class="boton confirmado">Confirmado</button>
+        <button class="boton no-confirmado">No Confirmado</button>
+    </div>
+
+</body>
+</html>
